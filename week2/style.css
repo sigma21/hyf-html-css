@@ -1,0 +1,94 @@
+/* pc flex*/
+section:nth-child(2) ul{
+    display: flex;
+    flex-direction: column wrap;
+    flex-wrap: wrap;
+}
+
+section:nth-child(2) li {width: calc(25% - 10px);}
+section:nth-child(2) li:nth-child(1) {width: calc(50% - 10px);}
+section:nth-child(2) li:nth-child(1) img{height: 70%;}
+section:nth-child(2) img{width:100%;}
+
+/* tablet flex */
+@media only screen and (max-width:768px){
+    section:nth-child(2) ul{
+        display: flex;
+        flex-direction: column wrap;
+        flex-wrap: wrap;
+    }
+    
+    section:nth-child(2) li:nth-child(n+3) {width: calc(33% - 10px);}
+    section:nth-child(2) li:nth-child(-n+2) {width: calc(50% - 10px);}
+    section:nth-child(2) img{width:100%;}
+}
+
+/* mobile flex */
+@media only screen and (max-width:480px){
+    section:nth-child(2) ul{
+        display: flex;
+        flex-direction: column wrap;
+        flex-wrap: wrap;
+    }
+
+    section:nth-child(2) li:nth-child(1) {width: 100%;}   
+    section:nth-child(2) li:nth-child(n+2) {width: calc(50% - 10px);}
+    section:nth-child(2) img{width:100%;}
+}
+
+/* pc float*/
+section:nth-child(1) ul{float: left;}
+section:nth-child(1) li {float: left; width: calc(25% - 10px);}
+section:nth-child(1) li:nth-child(1) {float: left;width: calc(50% - 10px);}
+section:nth-child(1) li:nth-child(1) img{height: 70%;}
+section:nth-child(1) img{width:100%;}
+
+/*tablet float*/
+@media only screen and (max-width:768px){
+    section:nth-child(1) ul{float: left;}
+    section:nth-child(1) li:nth-child(n+3) {float: left;width: calc(33% - 10px);}
+    section:nth-child(1) li:nth-child(-n+2) {float: left;width: calc(50% - 10px);}
+    section:nth-child(1) img{width:100%;}
+}
+
+/* mobile float */
+@media only screen and (max-width:480px){
+    section:nth-child(1) ul{float: left;}
+    section:nth-child(1) li:nth-child(1) {float: left;width: 100%;}   
+    section:nth-child(1) li:nth-child(n+2) {float: left;width: calc(50% - 10px);}
+    section:nth-child(1) img{width:100%;}
+}
+
+/******************************************/
+.grid-item{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    background:white;
+    height: 500px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.474);
+}
+
+li{list-style: none;}
+ul{padding: 0;}
+p{text-align: justify; font-weight: bold;}
+body{background: rgb(0,51,102);}
+
+li{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+li:hover{
+    transform: scale(1.01);
+    opacity: 0.8;
+}
+
+h1,h2 {
+    color: white;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 3em;
+}
+
+h3,p{color: rgb(0, 51, 102);font-family: 'Lato', sans-serif;}
