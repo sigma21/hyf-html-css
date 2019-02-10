@@ -85,12 +85,17 @@ li:hover{
     opacity: 0.8;
 }
 
-h1, h2 {
+h2 {
     color: white;
     font-family: 'Libre Barcode 39 Text', cursive;
     font-size: 3em;
 }
-
+h1{
+    color: white;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 3em;
+}
+	
 h1, h2:hover {
     opacity: 1;
     animation: flash 1.5s;
