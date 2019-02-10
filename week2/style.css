@@ -89,6 +89,16 @@ h1,h2 {
     color: white;
     font-family: 'Libre Barcode 39 Text', cursive;
     font-size: 3em;
+    opacity: 1;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
 }
 
 h3,p{color: rgb(0, 51, 102);font-family: 'Lato', sans-serif;}
