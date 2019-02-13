@@ -46,7 +46,6 @@ section:nth-child(1) li:nth-child(n+2) {width: calc(50% - 10px);}
     background:white;
     height: 500px;
     box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.474);
-    text-align:center;
 }
 
 img{width:80%; max-height: 300px;}
