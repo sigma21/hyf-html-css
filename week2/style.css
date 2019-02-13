@@ -79,14 +79,8 @@ h1, h2:hover {
 }
 
 @keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-    }
+	0% {opacity: .4;}
+	100% {opacity: 1;}
 }
 
-*:hover{
-	cursor:default
-}
+*:hover{cursor:default}
