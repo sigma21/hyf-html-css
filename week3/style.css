@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 
-.site_title, .heading, .intro_text, .footer_menu, .disclaimer{
+.site_title, .heading, .intro_text, .footer_menu, .disclaimer, .disclaimer_mobile, .latest_mobile{
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -16,8 +16,6 @@
     margin-bottom: 20vh;
 }
 
-.footer_menu, .disclaimer, .intro_text{font-weight: bold;}
-
 .heading{
     margin-top: 15vh;
     margin-left:2vw;
@@ -25,9 +23,8 @@
 }
 
 .image_wrapper{
-    height:4210px;
-    
-    /* position:relative; */
+    height:4000px;
+    position:relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -35,20 +32,20 @@
 
 .disclaimer{
     display: flex;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-bottom:10px;
     margin-top: 5%;
     font-size: 0.7em;
 
 }
 
-.disclaimer div{width: 161px;}
+.disclaimer div{width: 161px; margin:20px;}
 
 .footer_menu li{
     display: flex;
     margin-left: 30%;
-    /* margin-top: 10%; */
     font-size: 0.7em; 
+    font-weight: bold;
 }
 
 img{
@@ -57,6 +54,7 @@ img{
     filter: grayscale(100%);
     transition: .3s ease-in-out;
     margin: 10px;
+    margin-right: 0;
     max-width: 425px;
     overflow: hidden;
     width: 90%;
@@ -81,3 +79,48 @@ img:hover{filter: grayscale(0);}
 
 a{text-decoration: none;color: black;}
 
+.disclaimer_mobile, .latest_mobile{display: none;}
+
+@media only screen and (max-width:700px){
+
+    .image_wrapper div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .image_wrapper .overlay {display: none;}
+
+    .disclaimer, .footer_menu{display: none;}
+    
+    .intro_text{
+        font-size:0.9em;
+        margin-top:10px;
+        margin-left:10px;
+        margin-bottom: 20px;
+    }
+    
+    .heading{margin-top: 40px;}
+
+    .disclaimer_mobile{
+        display: block;
+        font-size: 0.65em;
+        font-weight: bold;
+        color: gray;
+    }
+    .disclaimer_mobile div{
+        margin:20px 10px 5px 10px;
+    }
+
+    .latest_mobile{
+        font-weight: bold;
+        font-size: 0.7em;
+        display: block;
+        margin:20px 10px 100px 10px;
+    }
+    .latest_mobile h4{
+        margin-bottom: 15px;
+    }
+}
